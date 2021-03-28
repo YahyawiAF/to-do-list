@@ -1,0 +1,33 @@
+.todo {
+  align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #dcdfe7;
+  box-shadow: 1px 1px 1px #dcdfe7;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 3px 10px;
+  font-family: "Roboto";
+  &__text {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+    color: #263238;
+  }
+  &__description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 10px;
+  }
+  &__delete {
+
+  }
+  &__bloc {
+    display: flex;
+    &--a {
+      flex-grow: 1;
+    }
+  }
+}
