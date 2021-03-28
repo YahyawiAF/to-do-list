@@ -1,0 +1,12 @@
+.todo-list {
+  &__header {
+    padding: 25px 25px 0;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: #5d6c85;
+  }
+  &__list {
+    padding: 25px;
+  }
+}
