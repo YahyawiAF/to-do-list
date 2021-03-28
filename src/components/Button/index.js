@@ -1,11 +1,13 @@
 import React from "react";
 import classNames from "classnames";
 
-import "style.scss";
+import "./style.scss";
 
-const Button = (style, handleSubmit) => {
+const Button = ({ theme, onClick, content }) => {
   return (
-    <button className={classNames(button, style)} onClick={handleSubmit} />
+    <button className={classNames("button", theme)} onClick={onClick}>
+      {content}
+    </button>
   );
 };
 

@@ -1,21 +1,36 @@
 .button {
+  cursor: pointer;
+  letter-spacing: 0;
+  transition: 0.5s all ease;
+}
+
+.primary {
   border: none;
   border-radius: 3px;
   min-width: 90px;
   padding: 9px 18px;
-  letter-spacing: 0;
+
   line-height: 17px;
   font-size: 14px;
   cursor: pointer;
   color: white;
-  transition: 0.5s all ease;
+
   border-width: 1px;
   border-style: solid;
-  &.primary {
-    border: 1px solid #1976fd;
-    background: #1976fd;
-    &:hover {
-      background: #126cef;
-    }
+  background: #1976fd;
+  &:hover {
+    background: #126cef;
+  }
+}
+
+.secondary {
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1976fd;
+  font-family: "Roboto";
+  &:hover {
+    color: #126cef;
   }
 }
