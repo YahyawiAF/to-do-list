@@ -1,0 +1,35 @@
+.input {
+  display: block;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #dee1ef;
+  border-radius: 3px;
+  padding: 9px 12px;
+  color: #5e6c84;
+  outline: unset;
+  &::placeholder {
+    color: #a7acb6;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &:focus {
+    border: 1px solid #1976fd;
+  }
+}
+
+.entry {
+  width: 300px;
+  &__label {
+    display: block;
+    color: #5d6c85;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 0 6px 0;
+  }
+}
