@@ -1,0 +1,16 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  .entry-group {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    .entry {
+        margin-bottom: 20px;
+    }
+  }
+}
