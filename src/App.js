@@ -36,7 +36,7 @@ function App() {
               <ProtectedRoute
                 exact
                 authed={token}
-                path="/home"
+                path="/"
                 component={Home}
               />
             </ToDoContext.Provider>

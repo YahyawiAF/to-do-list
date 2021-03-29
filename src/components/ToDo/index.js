@@ -5,10 +5,7 @@ import "./style.scss";
 
 function Todo({ todo, index, completeTodo, removeTodo }) {
   return (
-    <div
-      className="todo"
-      // style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
-    >
+    <div className="todo">
       <div className="todo__bloc todo__bloc--a">
         <p className="todo__text">{`${todo.text} :`}</p>
         <p className="todo__description">{todo.description}</p>

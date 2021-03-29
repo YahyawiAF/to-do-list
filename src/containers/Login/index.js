@@ -23,7 +23,7 @@ const Login = ({ history }) => {
   const handleSubmit = () => {
     if (state.email === "test@test.com" && state.passsword === "1234") {
       setToken(true);
-      history.push("/home");
+      history.push("/");
     }
   };
 
