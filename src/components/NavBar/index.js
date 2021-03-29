@@ -1,5 +1,7 @@
 import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
+import Button from "../Button";
+
 import { TokenContext } from "../../context";
 
 import "./style.scss";
@@ -35,38 +37,37 @@ const NavBar = ({ auth }) => {
                   fontWeight: "bold",
                   color: "#1976fd",
                 }}
-                to="/tache/"
+                to="/list"
               >
-                Taches
+                Liste
               </NavLink>
             </li>
+            <li className="navbar__login">
+              <Button
+                theme="login-btn"
+                content="Deconnexion"
+                onClick={() => setToken(false)}
+              />
+            </li>
+          </ul>
+        </div>
+      ) : (
+        <div className="navbar__container">
+          <ul>
             <li>
               <NavLink
                 activeStyle={{
                   fontWeight: "bold",
                   color: "#1976fd",
                 }}
-                to="/list"
+                exact
+                to="/"
               >
-                Liste
+                Home
               </NavLink>
             </li>
-            <li className="navbar__login">Deconnexion</li>
           </ul>
         </div>
-      ) : (
-        <li>
-          <NavLink
-            activeStyle={{
-              fontWeight: "bold",
-              color: "#1976fd",
-            }}
-            exact
-            to="/"
-          >
-            Home
-          </NavLink>
-        </li>
       )}
     </nav>
   );
