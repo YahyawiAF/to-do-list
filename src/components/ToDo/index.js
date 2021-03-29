@@ -7,7 +7,7 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
   return (
     <div
       className="todo"
-      style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
+      // style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
     >
       <div className="todo__bloc todo__bloc--a">
         <p className="todo__text">{`${todo.text} :`}</p>
@@ -20,7 +20,13 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
         />
       </div>
       <div className="todo__bloc">
-        <button onClick={() => completeTodo(index)}>Complete</button>
+        <Button
+          theme={["label", todo.isCompleted ? "completed" : "inprogress"].join(
+            " "
+          )}
+          content={todo.isCompleted ? "Completed" : "In Progress"}
+          onClick={() => completeTodo(index)}
+        />
       </div>
     </div>
   );

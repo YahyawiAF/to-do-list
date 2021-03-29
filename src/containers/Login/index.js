@@ -5,7 +5,7 @@ import { TokenContext } from "../../context";
 
 import "./style.scss";
 
-const Login = () => {
+const Login = ({ history }) => {
   const [token, setToken] = useContext(TokenContext);
   const [state, setState] = useState({
     email: "",
@@ -21,10 +21,9 @@ const Login = () => {
   };
 
   const handleSubmit = () => {
-    console.log("test", state, setToken);
     if (state.email === "test@test.com" && state.passsword === "1234") {
-      console.log("test");
       setToken(true);
+      history.push("/home");
     }
   };
 

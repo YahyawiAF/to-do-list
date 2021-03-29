@@ -7,7 +7,6 @@ import { TokenContext } from "../../context";
 import "./style.scss";
 
 const NavBar = ({ auth }) => {
-  const [activeLink, setActiveLink] = useState("");
   const [token, setToken] = useContext(TokenContext);
   return (
     <nav className="navbar">
@@ -61,9 +60,9 @@ const NavBar = ({ auth }) => {
                   color: "#1976fd",
                 }}
                 exact
-                to="/"
+                to="/login"
               >
-                Home
+                Login
               </NavLink>
             </li>
           </ul>

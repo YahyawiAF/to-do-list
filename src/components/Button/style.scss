@@ -2,6 +2,9 @@
   cursor: pointer;
   letter-spacing: 0;
   transition: 0.5s all ease;
+  &:focus {
+    outline: none;
+  }
 }
 
 .primary {
@@ -42,4 +45,22 @@
   color: #1976fd;
   border: none;
   background: none;
+}
+
+.label {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0;
+  padding: 8px 8px;
+  border-radius: 3px;
+  border: none;
+  line-height: unset;
+}
+
+.completed {
+  background: rgb(219, 40, 41);
+}
+
+.inprogress {
+  background: rgb(51, 196, 142);
 }
